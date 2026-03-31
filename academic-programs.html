@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs - Bugema University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.webp" alt="Bugema University Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic-programs.html" class="active">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+        <style>
+            .programs-card {
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 10px 40px rgba(0, 51, 102, 0.1);
+                border-top: 8px solid var(--primary-blue);
+                max-width: 950px;
+                margin: 4rem auto 6rem auto;
+                padding: 4rem 5rem;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            /* Decorative background watermark */
+            .programs-card::after {
+                content: "\f109";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                position: absolute;
+                bottom: -20px;
+                right: -20px;
+                font-size: 15rem;
+                color: rgba(0, 51, 102, 0.03);
+                z-index: 0;
+            }
+
+            .dept-title {
+                font-family: 'Roboto Slab', serif;
+                font-size: 2.2rem;
+                color: var(--primary-blue);
+                border-bottom: 4px solid var(--primary-blue);
+                padding-bottom: 0.5rem;
+                margin-bottom: 2.5rem;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+            }
+            .dept-title::after {
+                display: none;
+            }
+
+            .programs-list {
+                list-style: none;
+                padding: 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            .programs-list li {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--primary-blue);
+                margin-bottom: 1.4rem;
+                padding-left: 28px;
+                position: relative;
+                transition: transform 0.3s ease, color 0.3s ease;
+                display: flex;
+                align-items: center;
+                cursor: default;
+            }
+
+            .programs-list li:hover {
+                transform: translateX(12px);
+                color: #cc0000; /* Subtle red hover accent to match site accents */
+            }
+
+            .programs-list li::before {
+                content: "•";
+                color: var(--primary-blue);
+                font-size: 2.5rem;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        </style>
+
+        <div class="programs-card stagger-1">
+            <h2 class="dept-title">Department of Computing and Informatics</h2>
+            <ul class="programs-list">
+                <li>Bachelor of Library and Information Science</li>
+                <li>Bachelor of Information Technology</li>
+                <li>Bachelor of Business computing</li>
+                <li>Bachelor of Science in Network Systems Administration</li>
+                <li>Diploma in Computer Engineering</li>
+                <li>Bachelor of Science in Applied Data Science and Artificial Intelligence</li>
+                <li>Bachelor of Records and Archives Management</li>
+                <li>Diploma in Computer Forensics</li>
+                <li>Certificate in Information Technology (UVTEB)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

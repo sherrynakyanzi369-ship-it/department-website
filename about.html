@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Bugema University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.webp" alt="Bugema University Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="academic-programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+        <style>
+            .history-box h2::after, .philosophy-section h2::after { display: none; }
+        </style>
+        <div class="about-hero-section stagger-1" style="display: flex; flex-wrap: wrap; gap: 2.5rem; margin: 3rem 0 5rem 0;">
+            <div class="history-box" style="flex: 1; min-width: 300px; background-color: #080357; padding: 3.5rem; border-radius: 8px; box-shadow: var(--shadow-lg);">
+                <h2 style="color: white; font-family: 'Roboto Slab', serif; font-size: 2.2rem; margin-bottom: 2rem;">Our History</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+                    The Department of Computing & Informatics began as a small technology training unit, dedicated to equipping students with foundational skills in East Africa. It later evolved into an independent faculty wing, offering comprehensive degrees in Computer Science and IT.
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.05rem; line-height: 1.8;">
+                    After rapid technological shifts in the 2000s, the program continuously updated its curriculum to include Software Engineering, Cyber Security, and AI. The department later relocated to its state-of-the-art laboratory complex, expanding its hardware and research facilities. Today, it stands as an elite division producing industry leaders and receiving top academic accreditations.
+                </p>
+            </div>
+            <div class="history-image" style="flex: 1; min-width: 300px;">
+                <img src="assets/hd.png" alt="Department Campus" style="width: 100%; height: 100%; object-fit: cover; box-shadow: var(--shadow-sm);">
+            </div>
+        </div>
+
+        <div class="philosophy-section stagger-2" style="text-align: center; max-width: 800px; margin: 6rem auto 4rem auto;">
+           
+            <p style="color: var(--text-secondary); font-size: 1.15rem; line-height: 1.8;">
+                The Department of Computing & Informatics nurtures the <strong>head, heart, and hand</strong>—developing profound knowledge, ethical character, and practical technical skills for service and leadership in the digital age.
+            </p>
+            <div style="margin-top: 3rem;">
+                <a href="staff.html" style="background-color: #080357; color: white; padding: 1.2rem 3.5rem; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: transform 0.2s; display: inline-block;">View Department Staff <i class="fas fa-users" style="margin-left: 10px;"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="whatsapp-float stagger-3" aria-label="Chat with us on WhatsApp" style="position: fixed; bottom: 30px; left: 30px; width: 60px; height: 60px; background-color: #0b4a3a; color: white; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid white;">
+        <i class="fab fa-whatsapp"></i>
+        <span style="position: absolute; top: -5px; right: 0px; width: 14px; height: 14px; background-color: red; border-radius: 50%; border: 2px solid white;"></span>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Bugema University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.webp" alt="Bugema University Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic-programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+        <style>
+            .page-hero {
+                text-align: center;
+                margin: 4rem 0 3rem 0;
+            }
+            .page-hero h1 {
+                font-size: 3rem;
+                color: var(--primary-blue);
+                margin-bottom: 1rem;
+            }
+            .page-hero p {
+                font-size: 1.2rem;
+                color: var(--text-secondary);
+                max-width: 700px;
+                margin: 0 auto;
+            }
+            
+            .card-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 2.5rem;
+                margin-bottom: 5rem;
+            }
+            
+            .project-card {
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border: 1px solid var(--border-light);
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .project-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 25px rgba(0,51,102,0.15);
+            }
+            
+            .card-img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                border-bottom: 3px solid var(--secondary-blue);
+            }
+            
+            .card-body {
+                padding: 2rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .card-body h3 {
+                font-family: 'Roboto Slab', serif;
+                font-size: 1.4rem;
+                color: var(--primary-blue);
+                margin-bottom: 1rem;
+            }
+            
+            .card-body p {
+                font-size: 1rem;
+                color: var(--text-secondary);
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+                flex: 1;
+            }
+            
+            .read-more {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-weight: 600;
+                color: var(--secondary-blue);
+                text-decoration: none;
+                transition: color 0.2s;
+            }
+            .read-more:hover {
+                color: var(--primary-blue);
+            }
+            
+            .section-header {
+                font-family: 'Roboto Slab', serif;
+                text-align: center;
+                margin-bottom: 3rem;
+                color: #2f0fe4;
+            }
+        </style>
+        <h2 class="section-header stagger-2">Featured Core Areas</h2>
+        
+        <div class="card-grid stagger-3">
+            <div class="project-card">
+                <img src="assets/ai.png" alt="AI Research" class="card-img">
+                <div class="card-body">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Focusing on deep learning algorithms, natural language processing, and ethical AI integration in healthcare and agriculture.</p>
+                    <a href="#" class="read-more">Explore Area <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="https://i.pinimg.com/1200x/38/f6/24/38f62480cb1fe8e77007f97de54f4a88.jpg" alt="Cyber Security" class="card-img">
+                <div class="card-body">
+                    <h3>Cybersecurity</h3>
+                    <p>Developing advanced network security protocols, cryptography, and defending digital infrastructure from emerging global threats.</p>
+                    <a href="#" class="read-more">Explore Area <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="https://i.pinimg.com/736x/1a/18/cc/1a18ccc840020e086cd151dbf8076ffe.jpg" alt="Data Science" class="card-img">
+                <div class="card-body">
+                    <h3>Big Data Analytics</h3>
+                    <p>Mining large datasets for actionable insights, predictive modeling for business intelligence, and innovative data visualization.</p>
+                    <a href="#" class="read-more">Explore Area <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-header stagger-4" style="color: var(--primary-blue);">Current Live Projects</h2>
+        
+        <div class="card-grid stagger-5">
+            <div class="project-card">
+                <img src="https://i.pinimg.com/736x/5b/60/1f/5b601fe9773f54d729aba9e223fdfc9a.jpg" alt="Smart Campus" class="card-img">
+                <div class="card-body">
+                    <h3>IoT Smart Campus Initiative</h3>
+                    <p>Deploying interconnected sensors across Bugema University to optimize energy consumption and automate campus logistics.</p>
+                    <a href="#" class="read-more">Read Paper <i class="fas fa-file-pdf"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="https://i.pinimg.com/736x/c0/02/16/c002164fcf06db88711cedfcc510f28d.jpg" alt="Sustainable Computing" class="card-img">
+                <div class="card-body">
+                    <h3>Sustainable Computing</h3>
+                    <p>Researching green algorithms and hardware efficiencies to heavily reduce the carbon footprint of data centers in East Africa.</p>
+                    <a href="#" class="read-more">Read Paper <i class="fas fa-file-pdf"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

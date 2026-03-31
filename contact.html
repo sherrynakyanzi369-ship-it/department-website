@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bugema University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.webp" alt="Bugema University Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic-programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+        <style>
+            .contact-hero {
+                text-align: center;
+                margin: 4rem 0 3rem 0;
+            }
+
+            .section-title {
+                font-family: 'Roboto Slab', serif;
+                font-size: 2.1rem;
+                text-align: center;
+                color: #2a09e9;
+                /* Red color matching the image */
+                margin-bottom: 2rem;
+            }
+
+            .section-title::after {
+                display: none;
+            }
+
+            /* Top Info Grid */
+            .info-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                text-align: center;
+                margin-bottom: 6rem;
+                gap: 2rem;
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .info-item {
+                flex: 1;
+                min-width: 200px;
+                color: var(--text-secondary);
+                font-size: 0.95rem;
+                line-height: 1.8;
+            }
+
+            .info-item i {
+                font-size: 2.2rem;
+                color: #1a1a1a;
+                margin-bottom: 1.2rem;
+                font-weight: 300;
+            }
+
+            /* Form Area */
+            .minimal-form {
+                max-width: 850px;
+                margin: 0 auto 3rem auto;
+            }
+
+            .form-group-flat {
+                margin-bottom: 2.5rem;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-group-flat label {
+                font-weight: 700;
+                color: #0b0c5a;
+                font-size: 0.95rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .form-group-flat label span.required {
+                color: #2f0fe4;
+                /* specific bright blue asterisks from image */
+                font-weight: bold;
+            }
+
+            .form-group-flat input,
+            .form-group-flat textarea {
+                border: none;
+                border-bottom: 1.5px solid #d0d0d0;
+                padding: 0.5rem 0;
+                font-size: 1rem;
+                color: var(--text-primary);
+                background: transparent;
+                outline: none;
+                font-family: 'Inter', sans-serif;
+                transition: border-bottom-color 0.3s;
+            }
+
+            .form-group-flat input:focus,
+            .form-group-flat textarea:focus {
+                border-bottom-color: var(--primary-blue);
+            }
+
+            .form-group-flat input::placeholder,
+            .form-group-flat textarea::placeholder {
+                color: #a0a0a0;
+                font-size: 0.95rem;
+            }
+
+            .btn-blue {
+                background-color: #080357;
+                /* specific solid dark blue */
+                color: white;
+                border: none;
+                padding: 1.2rem 4rem;
+                font-size: 1.05rem;
+                font-weight: 600;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s;
+            }
+
+            .btn-blue:hover {
+                background-color: var(--secondary-blue);
+                transform: translateY(-2px);
+            }
+
+            .map-container {
+                max-width: 1000px;
+                margin: 0 auto 5rem auto;
+                height: 450px;
+                background-color: #e5e3df;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+
+            .map-container iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+
+        <div class="contact-hero stagger-1">
+            <h2 class="section-title">General Contact Information</h2>
+        </div>
+
+        <div class="info-grid stagger-2">
+            <div class="info-item">
+                <i class="far fa-map"></i>
+                <p>Kampala, Uganda</p>
+                <p>P.O BOX 6529 Kla Ug</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+256 702 940 003</p>
+                <p>+256 312 351 400</p>
+            </div>
+            <div class="info-item">
+                <i class="far fa-envelope"></i>
+                <p>info@bugemauniv.ac.ug</p>
+                <p>marketing@bugemauniv.ac.ug</p>
+            </div>
+            <div class="info-item">
+                <i class="far fa-clock"></i>
+                <p>Mon-Fri: 8 AM - 4 PM</p>
+                <p>Saturday: Sabbath Day</p>
+            </div>
+        </div>
+
+        <h2 class="section-title stagger-3">Get in Touch</h2>
+
+        <div class="minimal-form stagger-4">
+            <form id="contactForm">
+                <div class="form-group-flat">
+                    <label for="name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group-flat">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+256702940003">
+                </div>
+
+                <div class="form-group-flat">
+                    <label for="email">Enter Your Email Address here <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group-flat">
+                    <label for="message">Inquire anything about us <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="2" placeholder="Message" required
+                        style="resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="btn-blue">Send Message</button>
+            </form>
+        </div>
+
+        <div class="map-container stagger-5">
+            <!-- Embedding real google map centered on Bugema University mapped area from reference image -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31917.3789392!2d32.618683!3d0.570222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177cbb5cc7b26759%3A0xc0ffb82e212f7180!2sBugema%20University!5e0!3m2!1sen!2sug!4v1714000000000!5m2!1sen!2sug"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // In a real application, this would send the data to a server
+            // For demo purposes, we'll show a success message
+            alert(`Thank you for your message, ${data.name}!\n\nYour message regarding "${data.subject}" has been received. We will respond within 24-48 hours.\n\nThis is a demo form - in a real website, this would be sent to the university email system.`);
+
+            // Reset form
+            this.reset();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://placehold.co/100x100/003366/FFFFFF?text=Logo" alt="Bugema University Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic-programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+        <div class="registration-card">
+            <div class="registration-header">
+                <div class="registration-banner"></div>
+                <img src="https://placehold.co/100x100/003366/FFFFFF?text=Logo" alt="Bugema University Official Logo for registration form" class="registration-avatar">
+            </div>
+            
+            <div class="registration-content">
+                <div class="registration-info">
+                    <h1 class="registration-title">Student Registration</h1>
+                    <p class="registration-subtitle">Join Bugema University</p>
+                </div>
+                
+                <form class="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Enter first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Enter last name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+256 123 456 789">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="program">Program of Study:</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="it">Information Technology</option>
+                            <option value="se">Software Engineering</option>
+                            <option value="ds">Data Science</option>
+                            <option value="cyber">Cybersecurity</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <span>Male</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <span>Female</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Enter your residential address"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span>I agree to the <a href="#" class="link">Terms and Conditions</a></span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="registration-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugema University - Department of Computing & Informatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('assets/hero-campus.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* NEW STACKED LAYOUT (Typewriter Top, Links Bottom) */
+        .hero-background {
+            background-color: transparent !important;
+            min-height: 85vh !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 4rem 5%;
+        }
+
+        .hero-stacked-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+            gap: 4rem; /* Spacing between text and the glass box */
+        }
+
+        .hero-text-side {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-title {
+            color: #ffffff !important;
+            font-family: 'Roboto Slab', serif;
+            font-size: 5.5rem !important; /* Huge text per image */
+            line-height: 1.2;
+            margin: 0 0 1rem 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7) !important;
+            text-align: center;
+        }
+
+        .typewriter {
+            border-right: .12em solid white;
+            animation: blink-caret .8s step-end infinite;
+            display: inline-block;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+        }
+
+        .breadcrumb {
+            color: #ffffff !important;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8) !important;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0;
+            max-width: 800px; 
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .hero-cards-side {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .content-box {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            width: 100%;
+            max-width: 1100px; /* Allow sufficient width for a single row */
+            padding: 1rem 0 !important;
+        }
+
+        .quick-links {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem !important; 
+            margin: 0 !important;
+            width: 100%;
+        }
+
+        .link-button {
+            flex: 1 1 200px;
+            max-width: 250px;
+            text-align: center;
+            padding: 1.2rem 1rem !important;
+            font-size: 1.05rem; 
+            color: #ffffff !important;
+            background-color: #004d99 !important; 
+            border-radius: 4px !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow against background */
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 55px;
+        }
+        
+        .link-button:hover {
+            transform: translateY(-2px);
+            background-color: #003366 !important;
+        }
+
+        /* Mobile specific adjustments to ensure it looks okay on small screens */
+        @media (max-width: 991px) {
+            .hero-title { font-size: 3.5rem !important; }
+            .content-box { padding: 2rem 1.5rem !important; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.webp" alt="Bugema University Official Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic-programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-background">
+        <div class="hero-stacked-layout">
+            <div class="hero-text-side fade-in stagger-1">
+                <h1 class="hero-title typewriter" id="typewriter-text" style="white-space: pre-wrap;"></h1>
+                <p class="breadcrumb">SCHOOL OF SCIENCE & TECHNOLOGY > DEPARTMENT OF COMPUTING & INFORMATICS</p>
+            </div>
+            
+            <div class="hero-cards-side fade-in stagger-2">
+                <div class="content-box">
+                    <div class="quick-links">
+                        <a href="academic-programs.html" class="link-button">View Programs</a>
+                        <a href="admissions.html" class="link-button">Apply Now</a>
+                        <a href="staff.html" class="link-button">Meet Our Staff</a>
+                        <a href="contact.html" class="link-button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const text = "Department of Computing & Informatics";
+        const element = document.getElementById('typewriter-text');
+        let index = 0;
+
+        function typeWriter() {
+            element.textContent = "";
+            index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    element.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100);
+                } else {
+                    setTimeout(typeWriter, 5000);
+                }
+            }
+
+            type();
+        }
+
+        typeWriter();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

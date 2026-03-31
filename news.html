@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - Bugema University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.webp" alt="Bugema University Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic-programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html" class="active">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+        <style>
+            .page-hero {
+                text-align: center;
+                margin: 4rem 0 3rem 0;
+            }
+            .page-hero h1 {
+                font-size: 3rem;
+                color: var(--primary-blue);
+                margin-bottom: 1rem;
+            }
+            .page-hero p {
+                font-size: 1.2rem;
+                color: var(--text-secondary);
+                max-width: 700px;
+                margin: 0 auto;
+            }
+            
+            .news-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 2.5rem;
+                margin-bottom: 5rem;
+            }
+            
+            .news-card {
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+                transition: transform 0.3s ease;
+                border: 1px solid var(--border-light);
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            
+            .news-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 25px rgba(0,51,102,0.15);
+            }
+            
+            .card-img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+            }
+            
+            .date-badge {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background-color: #cc0000;
+                color: white;
+                padding: 0.4rem 0.8rem;
+                border-radius: 4px;
+                font-weight: 600;
+                font-size: 0.85rem;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            
+            .card-body {
+                padding: 2rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .card-body h3 {
+                font-family: 'Roboto Slab', serif;
+                font-size: 1.3rem;
+                color: var(--primary-blue);
+                margin-bottom: 1rem;
+            }
+            
+            .card-body p {
+                font-size: 1rem;
+                color: var(--text-secondary);
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+                flex: 1;
+            }
+            
+            .read-more {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-weight: 600;
+                color: var(--secondary-blue);
+                text-decoration: none;
+                transition: color 0.2s;
+            }
+            .read-more:hover {
+                color: #cc0000;
+            }
+            
+            .section-header {
+                font-family: 'Roboto Slab', serif;
+                text-align: center;
+                margin-bottom: 3rem;
+                color: var(--primary-blue);
+            }
+            .section-header::after {
+                display: none;
+            }
+        </style>
+        
+        <h2 class="section-header stagger-2">Latest News</h2>
+        
+        <div class="news-grid stagger-3">
+            <div class="news-card">
+                <span class="date-badge">Mar 15, 2026</span>
+                <img src="https://i.pinimg.com/736x/02/50/96/02509699aecde23eac20634b8a2b87c0.jpg" alt="Coding Competition" class="card-img">
+                <div class="card-body">
+                    <h3>Department Wins National Coding Competition</h3>
+                    <p>Our students emerged victorious in the National University Coding Challenge, showcasing their exceptional programming skills across multiple disciplines.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <span class="date-badge">Mar 1, 2026</span>
+                <img src="https://i.pinimg.com/736x/6d/61/4e/6d614e8e8088bf0fc4c0aea504bcce16.jpg" alt="AI Lab" class="card-img">
+                <div class="card-body">
+                    <h3>New Artificial Intelligence Lab Established</h3>
+                    <p>The department has unveiled a state-of-the-art AI laboratory equipped with high-performance computing resources to support research and student training.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <span class="date-badge">Feb 20, 2026</span>
+                <img src="https://i.pinimg.com/736x/31/ad/d6/31add634f92ccd0004daf12b6a571722.jpg" alt="Industry Partnership" class="card-img">
+                <div class="card-body">
+                    <h3>Industry Partnership with Major Tech Giants</h3>
+                    <p>We've officially signed MoUs with leading international tech companies, securing lucrative internship pipelines and curriculum development support.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-header stagger-4" style="color: #3405dd;">Upcoming Events</h2>
+        
+        <div class="news-grid stagger-5">
+            <div class="news-card">
+                <span class="date-badge" style="background-color: var(--primary-blue);">Apr 25, 2026</span>
+                <img src="https://i.pinimg.com/736x/7e/b4/3b/7eb43b50e62a7129a39fa55dd7921b4e.jpg" alt="Tech Innovation Summit" class="card-img">
+                <div class="card-body">
+                    <h3>Tech Innovation Summit 2026</h3>
+                    <p>Join us for our annual technology conference featuring industry expert panels, student project showcases, and networking sessions.</p>
+                    <a href="#" class="read-more">Register Now <i class="fas fa-ticket-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <span class="date-badge" style="background-color: var(--primary-blue);">May 10, 2026</span>
+                <img src="https://i.pinimg.com/736x/6e/8c/ec/6e8ceca6bd0843cc1c1806f341713856.jpg" alt="Open Day" class="card-img">
+                <div class="card-body">
+                    <h3>Department Open Day</h3>
+                    <p>Prospective students, parents, and industry guests are warmly invited to explore our campus facilities, interact with professors, and view programs.</p>
+                    <a href="#" class="read-more">RSVP <i class="fas fa-calendar-check"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

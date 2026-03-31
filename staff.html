@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff - Bugema University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.webp" alt="Bugema University Logo">
+                <div class="logo-text">
+                    <span>BUGEMA UNIVERSITY</span>
+                    <span>Excellence In Service</span>
+                </div>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic-programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+        <style>
+            .staff-hero {
+                text-align: center;
+                margin: 3rem 0;
+            }
+            .section-title {
+                font-family: 'Roboto Slab', serif;
+                font-size: 2.2rem;
+                text-align: center;
+                margin: 4rem 0 2rem 0;
+                color: var(--primary-blue);
+            }
+            .section-title.red-title {
+                color: #cc0000;
+            }
+            .section-title::after {
+                display: none;
+            }
+            .staff-intro {
+                max-width: 900px;
+                margin: 0 auto 3rem auto;
+                color: var(--text-secondary);
+                text-align: center;
+                font-size: 1.05rem;
+                line-height: 1.8;
+            }
+            
+            .staff-portraits-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 2rem;
+                margin-bottom: 4rem;
+            }
+            
+            /* Admin specifically requested 5 cards in a row based on image */
+            .admin-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+            
+            .staff-portrait-card {
+                text-align: center;
+                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                cursor: pointer;
+            }
+            
+            .image-wrapper {
+                overflow: hidden;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                margin-bottom: 1rem;
+                border-bottom: 4px solid var(--secondary-blue);
+                background-color: var(--bg-surface);
+            }
+            
+            .staff-portrait-card img {
+                width: 100%;
+                aspect-ratio: 4/5;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+                display: block;
+            }
+            
+            /* Hover Effect */
+            .staff-portrait-card:hover {
+                transform: translateY(-10px);
+            }
+            
+            .staff-portrait-card:hover img {
+                transform: scale(1.08);
+            }
+            
+            .staff-portrait-card:hover .image-wrapper {
+                border-bottom-color: #200bdd; /* Subtle accent change on hover */
+                box-shadow: 0 10px 25px rgba(0,51,102,0.2);
+            }
+            
+            .staff-name {
+                font-family: 'Roboto Slab', serif;
+                color: var(--primary-blue);
+                font-size: 1.15rem;
+                margin-bottom: 0.2rem;
+            }
+            
+            .staff-title {
+                color: var(--text-muted);
+                font-size: 0.85rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+        </style>
+
+        <h2 class="section-title stagger-1">Departmental Heads</h2>
+        
+        <div class="staff-portraits-grid stagger-2">
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/hd.png" alt="Prof. John Mugisha">
+                </div>
+                <h3 class="staff-name">MR EMMA SSEWANKAMBO</h3>
+                <p class="staff-title">H.O.D Computing & Informatics</p>
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/sn.png" alt="Dr. Sarah Namatovu">
+                </div>
+                <h3 class="staff-name">SSENTOGO REAGAN </h3>
+                <p class="staff-title">MARKETING</p>
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/tn.png" alt="Dr. Sarah Namatovu">
+                </div>
+                <h3 class="staff-name">TIBENDA SETH</h3>
+                <p class="staff-title">ICT DIRECTORATE</p>
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/mm.png" alt="Dr. Sarah Namatovu">
+                </div>
+                <h3 class="staff-name">KASIBE ISMA ISAIAH </h3>
+                <p class="staff-title">H.O.D LIFE & PHYSICAL SCIENCE</p>
+            </div>
+            
+        </div>
+
+        <h2 class="section-title red-title stagger-3">Academic Staff</h2>
+        
+        <div class="staff-portraits-grid stagger-4">
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/waliu.png" alt="Placeholder Vector">
+                </div>
+               
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/kitlu.png" alt="Dr. Rebecca Nalwoga">
+                </div>
+                
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/bal.png" alt="Mr. Peter Ssenyonjo">
+                </div>
+               
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/mm.png" alt="Mrs. Alice Kemigisha">
+                </div>
+               
+            </div>
+        </div>
+
+        <p class="staff-intro stagger-5">We invest in our people through orientations, professional development, and a faith-centered community that celebrates milestones. With our campuses, our staff bridge urban and rural contexts, raising responsible citizens from Uganda and internationally. At Bugema, our staff and faculty are not just employees, they are partners in purpose. We are proud of their unwavering dedication, and we invite you to join this family.</p>
+
+        <h2 class="section-title red-title stagger-5">Administrators</h2>
+        
+        <div class="staff-portraits-grid admin-grid stagger-6">
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/dv.png" alt="Jane Mukasa">
+                </div>
+                <h3 class="staff-name">PROF ISREAL KAFEERO MATISIKO</h3>
+                <p class="staff-title">VICE CHANCELLOR</p>
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/dc.png" alt="Susan Nalule">
+                </div>
+                <h3 class="staff-name">DR. ROSETTE KABUYE</h3>
+                <p class="staff-title">DVC ACADEMICS</p>
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/fd.png" alt="Mr. Robert Kibira">
+                </div>
+                <h3 class="staff-name">PR. BAGAMBE WILLIAM</h3>
+                <p class="staff-title">DVC FINAINCE</p>
+            </div>
+            <div class="staff-portrait-card">
+                <div class="image-wrapper">
+                    <img src="assets/ww.png" alt="Madam Justine Lwanga">
+                </div>
+                <h3 class="staff-name">MADAM JUSTINE LWANGE</h3>
+                <p class="staff-title">Academic Registrar</p>
+            </div>
+           
+        </div>
+    </div>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="whatsapp-float stagger-6" aria-label="Chat with us on WhatsApp" style="position: fixed; bottom: 30px; left: 30px; width: 60px; height: 60px; background-color: #0b4a3a; color: white; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid white;">
+        <i class="fab fa-whatsapp"></i>
+        <span style="position: absolute; top: -5px; right: 0px; width: 14px; height: 14px; background-color: red; border-radius: 50%; border: 2px solid white;"></span>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
