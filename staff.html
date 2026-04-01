@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header class="main-header">
         <div class="nav-container">
@@ -43,6 +45,7 @@
                 text-align: center;
                 margin: 3rem 0;
             }
+
             .section-title {
                 font-family: 'Roboto Slab', serif;
                 font-size: 2.2rem;
@@ -50,12 +53,15 @@
                 margin: 4rem 0 2rem 0;
                 color: var(--primary-blue);
             }
+
             .section-title.red-title {
-                color: #cc0000;
+                color: #0d11d6;
             }
+
             .section-title::after {
                 display: none;
             }
+
             .staff-intro {
                 max-width: 900px;
                 margin: 0 auto 3rem auto;
@@ -64,33 +70,33 @@
                 font-size: 1.05rem;
                 line-height: 1.8;
             }
-            
+
             .staff-portraits-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 gap: 2rem;
                 margin-bottom: 4rem;
             }
-            
+
             /* Admin specifically requested 5 cards in a row based on image */
             .admin-grid {
                 grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             }
-            
+
             .staff-portrait-card {
                 text-align: center;
                 transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                 cursor: pointer;
             }
-            
+
             .image-wrapper {
                 overflow: hidden;
-                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
                 margin-bottom: 1rem;
                 border-bottom: 4px solid var(--secondary-blue);
                 background-color: var(--bg-surface);
             }
-            
+
             .staff-portrait-card img {
                 width: 100%;
                 aspect-ratio: 4/5;
@@ -98,28 +104,29 @@
                 transition: transform 0.5s ease;
                 display: block;
             }
-            
+
             /* Hover Effect */
             .staff-portrait-card:hover {
                 transform: translateY(-10px);
             }
-            
+
             .staff-portrait-card:hover img {
                 transform: scale(1.08);
             }
-            
+
             .staff-portrait-card:hover .image-wrapper {
-                border-bottom-color: #200bdd; /* Subtle accent change on hover */
-                box-shadow: 0 10px 25px rgba(0,51,102,0.2);
+                border-bottom-color: #200bdd;
+                /* Subtle accent change on hover */
+                box-shadow: 0 10px 25px rgba(0, 51, 102, 0.2);
             }
-            
+
             .staff-name {
                 font-family: 'Roboto Slab', serif;
                 color: var(--primary-blue);
                 font-size: 1.15rem;
                 margin-bottom: 0.2rem;
             }
-            
+
             .staff-title {
                 color: var(--text-muted);
                 font-size: 0.85rem;
@@ -127,10 +134,20 @@
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
             }
+
+            .staff-message {
+                font-size: 0.9rem;
+                color: #555;
+                margin-top: 0.8rem;
+                margin-bottom: 0.5rem;
+                font-style: italic;
+                line-height: 1.4;
+                padding: 0 0.5rem;
+            }
         </style>
 
         <h2 class="section-title stagger-1">Departmental Heads</h2>
-        
+
         <div class="staff-portraits-grid stagger-2">
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
@@ -138,6 +155,7 @@
                 </div>
                 <h3 class="staff-name">MR EMMA SSEWANKAMBO</h3>
                 <p class="staff-title">H.O.D Computing & Informatics</p>
+                <p class="staff-message">"Dedicated to advancing technological innovation and academic excellence."</p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
@@ -145,6 +163,8 @@
                 </div>
                 <h3 class="staff-name">SSENTOGO REAGAN </h3>
                 <p class="staff-title">MARKETING</p>
+                <p class="staff-message">"Connecting our transformative programs with the brilliant minds of tomorrow."
+                </p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
@@ -152,6 +172,8 @@
                 </div>
                 <h3 class="staff-name">TIBENDA SETH</h3>
                 <p class="staff-title">ICT DIRECTORATE</p>
+                <p class="staff-message">"Empowering the university through seamless and modern digital infrastructure."
+                </p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
@@ -159,50 +181,65 @@
                 </div>
                 <h3 class="staff-name">KASIBE ISMA ISAIAH </h3>
                 <p class="staff-title">H.O.D LIFE & PHYSICAL SCIENCE</p>
+                <p class="staff-message">"Exploring fundamental scientific principles to understand our world better."
+                </p>
             </div>
-            
+
         </div>
 
         <h2 class="section-title red-title stagger-3">Academic Staff</h2>
-        
+
         <div class="staff-portraits-grid stagger-4">
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
                     <img src="assets/waliu.png" alt="Placeholder Vector">
                 </div>
-               
+                <h3 class="staff-name">DR. WALIU OLADIKPO</h3>
+                <p class="staff-title">SENIOR LECTURER</p>
+                <p class="staff-message">"Inspiring our students to achieve their full academic potential."</p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
                     <img src="assets/kitlu.png" alt="Dr. Rebecca Nalwoga">
                 </div>
-                
+                <h3 class="staff-name">DR. REBECCA NALWOGA</h3>
+                <p class="staff-title">LECTURER</p>
+                <p class="staff-message">"Fostering a lasting passion for lifelong learning and discovery."</p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
                     <img src="assets/bal.png" alt="Mr. Peter Ssenyonjo">
                 </div>
-               
+                <h3 class="staff-name">MR. PETER SSENYONJO</h3>
+                <p class="staff-title">ASSISTANT LECTURER</p>
+                <p class="staff-message">"Guiding students through practical, hands-on academic experiences."</p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
                     <img src="assets/mm.png" alt="Mrs. Alice Kemigisha">
                 </div>
-               
+                <h3 class="staff-name">MRS. ALICE KEMIGISHA</h3>
+                <p class="staff-title">RESEARCH COORDINATOR</p>
+                <p class="staff-message">"Driving impactful research that continuously benefits our community."</p>
             </div>
         </div>
 
-        <p class="staff-intro stagger-5">We invest in our people through orientations, professional development, and a faith-centered community that celebrates milestones. With our campuses, our staff bridge urban and rural contexts, raising responsible citizens from Uganda and internationally. At Bugema, our staff and faculty are not just employees, they are partners in purpose. We are proud of their unwavering dedication, and we invite you to join this family.</p>
+        <p class="staff-intro stagger-5">We invest in our people through orientations, professional development, and a
+            faith-centered community that celebrates milestones. With our campuses, our staff bridge urban and rural
+            contexts, raising responsible citizens from Uganda and internationally. At Bugema, our staff and faculty are
+            not just employees, they are partners in purpose. We are proud of their unwavering dedication, and we invite
+            you to join this family.</p>
 
         <h2 class="section-title red-title stagger-5">Administrators</h2>
-        
+
         <div class="staff-portraits-grid admin-grid stagger-6">
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
                     <img src="assets/dv.png" alt="Jane Mukasa">
                 </div>
-                <h3 class="staff-name">PROF ISREAL KAFEERO MATISIKO</h3>
+                <h3 class="staff-name">PROF ISREAL KAFEERO</h3>
                 <p class="staff-title">VICE CHANCELLOR</p>
+                <p class="staff-message">"Committed to excellence in holistic education and community service."</p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
@@ -210,29 +247,34 @@
                 </div>
                 <h3 class="staff-name">DR. ROSETTE KABUYE</h3>
                 <p class="staff-title">DVC ACADEMICS</p>
+                <p class="staff-message">"Ensuring our academic programs meet the highest global standards."</p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
                     <img src="assets/fd.png" alt="Mr. Robert Kibira">
                 </div>
                 <h3 class="staff-name">PR. BAGAMBE WILLIAM</h3>
-                <p class="staff-title">DVC FINAINCE</p>
+                <p class="staff-title">DVC FINANCE</p>
+                <p class="staff-message">"Stewarding university resources to sustainably support our vision."</p>
             </div>
             <div class="staff-portrait-card">
                 <div class="image-wrapper">
                     <img src="assets/ww.png" alt="Madam Justine Lwanga">
                 </div>
-                <h3 class="staff-name">MADAM JUSTINE LWANGE</h3>
-                <p class="staff-title">Academic Registrar</p>
+                <h3 class="staff-name">MADAM JUSTINE LWANGA</h3>
+                <p class="staff-title">ACADEMIC REGISTRAR</p>
+                <p class="staff-message">"Facilitating a smooth, rewarding, and enriching student journey."</p>
             </div>
-           
+
         </div>
     </div>
-    
+
     <!-- WhatsApp Floating Button -->
-    <a href="#" class="whatsapp-float stagger-6" aria-label="Chat with us on WhatsApp" style="position: fixed; bottom: 30px; left: 30px; width: 60px; height: 60px; background-color: #0b4a3a; color: white; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid white;">
+    <a href="#" class="whatsapp-float stagger-6" aria-label="Chat with us on WhatsApp"
+        style="position: fixed; bottom: 30px; left: 30px; width: 60px; height: 60px; background-color: #0b4a3a; color: white; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid white;">
         <i class="fab fa-whatsapp"></i>
-        <span style="position: absolute; top: -5px; right: 0px; width: 14px; height: 14px; background-color: red; border-radius: 50%; border: 2px solid white;"></span>
+        <span
+            style="position: absolute; top: -5px; right: 0px; width: 14px; height: 14px; background-color: red; border-radius: 50%; border: 2px solid white;"></span>
     </a>
 
     <footer>
@@ -240,4 +282,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
